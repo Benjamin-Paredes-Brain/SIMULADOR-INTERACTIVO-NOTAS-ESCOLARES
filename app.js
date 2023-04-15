@@ -19,7 +19,7 @@ do {
 
     nota = Number(prompt("Ingrese su nota"))
 
-    if (nota <= 0 || nota > 10 || isNaN(nota)) {
+    while (nota <= 0 || nota > 10 || isNaN(nota)) {
         alert("NOTA INVALIDA!")
         nota = Number(prompt("Por favor, ingrese una nota valida!"))
     }
@@ -32,7 +32,7 @@ do {
     while (decision == "Si" || decision == "si" || decision == "SI") {
         nota = Number(prompt("Ingrese otra nota"))
 
-        if (nota <= 0 || nota > 10 || isNaN(nota)) {
+        while (nota <= 0 || nota > 10 || isNaN(nota)) {
             alert("NOTA INVALIDA!")
             nota = Number(prompt("Por favor, ingrese una nota valida!"))
         }
